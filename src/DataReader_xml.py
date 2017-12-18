@@ -77,7 +77,5 @@ def get_Day_Fields_Details(TreeRoot):
     Row_To_Insert = get_CityName() + "," + get_ElaborateDate() + ","  # A new raw to be inserted into Climate_Details file
 
     for Day in TreeRoot.iter('dia'):  # iterating over dia tags
-        Row_To_Insert = Row_To_Insert + str(get_Detail_Field_Mean(Day, 'prob_precipitacion')) + "," + \
-                        str(get_Detail_Field_Mean(Day, 'cota_nieve_prov')) + ","
-
+        Row_To_Insert = Row_To_Insert + str(get_Detail_Field_Mean(Day, 'prob_precipitacion')) + ";" + str(get_Detail_Field_Mean(Day, 'cota_nieve_prov'));
 
